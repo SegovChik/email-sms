@@ -4,14 +4,13 @@ import (
 	"github.com/SegovChik/email-sms/pkg/awsconfig"
 	"github.com/SegovChik/email-sms/pkg/email"
 	"github.com/SegovChik/email-sms/pkg/sms"
-	"github.com/aws/aws-sdk-go/aws"
 	"log"
 )
 
 
 func main() {
 	// Create a session instance.
-	ses, err := aws.New(aws.Config{
+	ses, err := awsconfig.New(awsconfig.Config{
 		Region:  "eu-central-1",
 		Profile: "default",
 		ID:      "secret",
