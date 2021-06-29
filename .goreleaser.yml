@@ -4,8 +4,6 @@ builds:
     binary: aws-api
     goos:
       - linux
-      - darwin
-
 
 archives:
   - replacements:
