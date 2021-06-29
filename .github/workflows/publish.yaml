@@ -1,10 +1,9 @@
 name: goreleaser
 
 on:
-  push:
-     branches:
-      - main
-
+  release:
+    types: [published]
+    
 jobs:
   goreleaser:
     runs-on: ubuntu-latest
