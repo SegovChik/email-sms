@@ -1,7 +1,7 @@
 builds:
   - main: ./cmd
-    id: "dbgw"
-    binary: dbgw
+    id: "aws-api"
+    binary: aws-api
     goos:
       - linux
       - darwin
